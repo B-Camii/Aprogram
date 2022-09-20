@@ -4,19 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backdos"
     tools:context=".otra">
 
 
     <TextView
         android:id="@+id/tvTituloDos"
-        android:layout_width="222dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="sans-serif-black"
+        android:layout_width="304dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/baloo"
         android:text="INTRODUCCION"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,31 +37,32 @@
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/backdos"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp" />
 
-    <TextView
-        android:id="@+id/tvIntroduccion"
-        android:layout_width="332dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="44dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="En esta app aprenderemos sobre programacion basica, en base a lecciones y actividades propuestas"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloDos" />
-
     <Button
         android:id="@+id/btnSiguientedos"
-        android:layout_width="256dp"
-        android:layout_height="58dp"
+        android:layout_width="133dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="60dp"
         android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIntroduccion"
-        app:layout_constraintVertical_bias="0.673"
-        tools:layout_editor_absoluteX="77dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="378dp"
+        android:fontFamily="@font/amita"
+        android:text="holaa (font amita)"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloDos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

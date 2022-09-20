@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/backfondo"
     android:backgroundTint="#000204"
     android:backgroundTintMode="add"
     tools:context=".MainActivity">
@@ -13,7 +13,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="133dp"
         android:layout_height="38dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="188dp"
         android:fontFamily="sans-serif-black"
         android:text="Bienvenidos"
         android:textAlignment="center"
@@ -21,6 +21,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,11 +43,11 @@
         android:id="@+id/tvUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:text="Usuario"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
@@ -54,13 +55,13 @@
         android:id="@+id/etUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#000000"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvUsuario"
         tools:ignore="SpeakableTextPresentCheck"
@@ -68,15 +69,15 @@
 
     <EditText
         android:id="@+id/etContraseña"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="222dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="#020000"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvContraseña"
         tools:ignore="TouchTargetSizeCheck"
@@ -86,11 +87,11 @@
         android:id="@+id/tvContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:text="Contraseña"
         android:textColor="#040000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
 
@@ -101,16 +102,18 @@
         android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMensaje"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <TextView
         android:id="@+id/tvMensaje"
         android:layout_width="207dp"
         android:layout_height="31dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContraseña" />
 </androidx.constraintlayout.widget.ConstraintLayout>

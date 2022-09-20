@@ -21,7 +21,7 @@ public class otra extends AppCompatActivity {
         setContentView(R.layout.activity_otra);
 
         tvTituloDos = (TextView) findViewById(R.id.tvTituloDos);
-        tvIntroduccion=(TextView) findViewById(R.id.tvIntroduccion);
+
         btnSiguienteDos=(Button) findViewById(R.id.btnSiguientedos);
 
         btnSiguienteDos .setOnClickListener(new View.OnClickListener() {

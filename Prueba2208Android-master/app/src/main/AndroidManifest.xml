@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="cami.cl.aprogram">
+    package="cami.cl.prueba2208">
 
     <application
         android:allowBackup="true"
@@ -11,14 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Aprogram"
+        android:theme="@style/Theme.Prueba2208"
         tools:targetApi="31">
-        <activity
-            android:name=".OtraDos"
-            android:exported="false" />
-        <activity
-            android:name=".otra"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,10 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
